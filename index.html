@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="fcc-survey-form.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div id="form-container">
+        <div class="center">
+            <p id="description">Let us know how to improve your experience!</p>
+        </div>
+        <form action="#" id="survey-form" >
+            <div class="labels">
+                <label for="name" id="name-label">*Name:</label> 
+            </div>
+            <div class="inputs">
+                <input type="text" id="name" placeholder="Enter you name..." required>
+                <span id="nameFail"></span>
+            </div>
+            <div class="labels">
+                <label for="email" id="email-label">*Email:</label>
+            </div>
+            <div class="inputs">
+                <input type="email" id="email" placeholder="Enter you email..." required>
+                <span id="emailFail"></span>
+            </div>
+            <div class="labels">
+                <label for="number" id="number-label">How would you rate your experience?</label>
+            </div>
+            <div class="inputs" id="number">
+                <input type="number" id="number" min="1" max="10" placeholder="1-10">
+            </div>
+            <div class="labels">
+                How did you hear about us?
+            </div>
+            <div class="inputs">
+                <select name="hear" id="dropdown">
+                    <option value="friend">From a friend</option>
+                    <option value="search-engine">From a search engine</option>
+                    <option value="ad">From an ad</option>
+                </select>
+            </div>
+            <div class="labels">
+                How likely are you to recommend us to another person?
+            </div>
+            <div class="inputs">
+                <input type="radio" name="recommend" value="likely"> Likely<br>
+                <input type="radio" name="recommend" value="meh"> Meh<br>
+                <input type="radio" name="recommend" value="unlikely"> Unlikely<br>
+            </div>
+            <div class="labels">
+                Which areas taught you something useful?
+            </div>
+            <div class="inputs">
+                <input type="checkbox" value="html"> HTML<br>
+                <input type="checkbox" value="css"> CSS<br>
+                <input type="checkbox" value="js"> JavaScript<br>
+            </div>
+            <div class="centered">
+                What else is on your mind?
+            </div>
+            <div class="centered">
+                <textarea cols="30" rows="10"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
